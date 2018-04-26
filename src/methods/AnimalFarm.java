@@ -1,4 +1,4 @@
-package methods;
+ package methods;
 
 //Copyright (c) The League of Amazing Programmers 2013-2017
 //Level 0
@@ -14,13 +14,29 @@ import javax.swing.JOptionPane;
 public class AnimalFarm {
 
 AnimalFarm() {
-	/*
-	 * 1. Ask the user which animal they want, then play the sound of that
-	 * animal.
-	 */
+	
 
-	/* 2. Make it so that the user can keep entering new animals. */
+for(int i=0; i<10; i++) {	
+	
+	String Bob=JOptionPane.showInputDialog("What is your favorite animal?" );
+	if(Bob.equals("dog")) {
+	
+	playWoof();
 }
+
+if(Bob.equals("duck")) {
+	
+	playQuack();
+}
+}
+}
+
+	private void PlayMeow() {
+	
+	
+}
+
+
 
 void playMoo() {
 	playNoise(mooFile);
